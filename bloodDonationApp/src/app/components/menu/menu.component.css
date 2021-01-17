@@ -1,0 +1,9 @@
+nav{background-color: coral;}
+ul{display: flex;margin-bottom: 0; list-style: none;font-family: -webkit-pictograph;font-weight: bold; color: darkred;font-size: large}
+li:hover{color: cornsilk;background-color: rgba(139,0,0,0.3);}
+ul li ul { position: absolute;width: 200px;display: none;list-style: disc; background: coral; }
+ul li:hover ul {display: block;}
+
+@media(max-width:767px) {
+    ul{ flex-wrap: wrap;}
+}

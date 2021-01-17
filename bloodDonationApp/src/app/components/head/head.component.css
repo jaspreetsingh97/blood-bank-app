@@ -1,0 +1,9 @@
+header{ background-color:#771005;}
+.logo{ font-family: -webkit-pictograph;color: white ;text-shadow: 7px 7px 4px #000000;}
+.logo-size{font-size: x-large;}
+.head-button{border: 2px  bisque solid; border-radius: 10px; background: brown; color: white; font-family: -webkit-pictograph;}
+button:hover {background-color: bisque;border: 2px darkred solid;color: darkred;font-size: large;padding: 20px;}
+.svg-size:hover{height: 30pt;width: 30pt;}
+.svg-clr:hover{fill:darkred}
+
+

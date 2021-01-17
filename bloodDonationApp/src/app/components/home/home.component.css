@@ -1,0 +1,11 @@
+.background{background-image: url('./../../../assets/images/home-back.jpg');}
+form{background-color: rgba(235, 106, 106, 0.4);border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 5.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+select {border-radius: 10px; width: 100%;}
+select:focus{background-color: rgba(235, 106, 106, 0.4);}
+.form-button{border: 2px  bisque solid; border-radius: 10px; background: brown; color: white; font-family: -webkit-pictograph;}
+.form-button:hover {background-color: bisque;border: 2px darkred solid;color: darkred;font-size: large;padding: 20px;}
+.logo{ font-family: -webkit-pictograph;color: white ;text-shadow: 7px 7px 4px #000000;}
+.circle{background-color: rgba(235, 106, 106, 0.4);border-radius: 50%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 5.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+.font-size{font-size: xx-large}
+.font-size:hover{color: black;}
+

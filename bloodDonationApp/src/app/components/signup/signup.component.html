@@ -1,0 +1,135 @@
+<app-head></app-head>
+
+<div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+    <div class="wrapper wrapper--w790">
+
+  <div class="card card-5">
+    <div class="card-heading">
+      <h2 class="title">SignUp Form</h2>
+    </div>
+  <div class="card-body">
+  <form class="" [formGroup]="signup" (ngSubmit)="Save(signup.value)">
+      <legend><h2><b>Registration Form</b></h2></legend><br>
+
+    <div class="form-row">
+      <div class="name">
+      <label class="control-label">Name</label>
+      </div>
+      <div class="value">
+        <input type="text" class="input--style-5" formControlName="name">
+      </div>
+      <small class="text-muted" [hidden]="signup.controls.name.valid || (signup.controls.name.pristine)">
+          Name is required (minimum 10 characters).
+      </small>
+    </div>
+    <div class="form-row">
+        <div class="name">
+      <label class="control-label">Username</label>
+        </div>
+      <div class="value">
+        <input type="text" class="input--style-5" formControlName="username">
+      </div>
+      <small class="text-muted" [hidden]="signup.controls.username.valid || (signup.controls.username.pristine)">
+          username is required (minimum 10 characters).
+      </small>
+    </div>
+    <div class="form-row">
+        <div class="name">
+          <label class="control-label">Password</label>
+        </div>
+      <div class="value">
+        <input type="text" class="input--style-5" formControlName="password">
+      </div>
+      <small class="text-muted" [hidden]="signup.controls.password.valid || (signup.controls.password.pristine)">
+          password is required (minimum 10 characters).
+      </small>
+    </div>
+    <div class="form-row">
+        <div class="name">
+      <label class="control-label">dateOfBirth</label>
+        </div>
+      <div class="value">
+        <input type="date" class="daterangepicker" formControlName="dateOfBirth">
+      </div>
+      <small class="text-muted" [hidden]="signup.controls.dateOfBirth.valid || (signup.controls.dateOfBirth.pristine)">
+          DOB is required (minimum 10 characters).
+      </small>
+    </div>
+    <div class="form-row">
+        <div class="name">
+      <label class="control-label">BloodGroup</label>
+        </div>
+      <div class="value">
+        <select  class="input--style-5" formControlName="bloodGroup">
+          <option value="AB.Positive">AB Positive</option>
+          <option value="AB.Negative">AB Negative</option>
+          <option value="A.Positive">A Positive</option>
+          <option value="A.Negative">A Negative</option>
+          <option value="B.Positive">B Positive</option>
+          <option value="B.Negative">B Negative</option>
+          <option value="O.Positive">O Positive</option>
+          <option value="O.Negative">O Negative</option>
+        </select>
+      </div>
+      <small class="text-muted" [hidden]="signup.controls.bloodGroup.valid || (signup.controls.bloodGroup.pristine)">
+          BloodGroup is required (minimum 10 characters).
+      </small>
+    </div>
+    <div class="form-row">
+        <div class="name">
+      <label class="control-label">Gender</label>
+        </div>
+      <div class="value">
+        <select  class="input--style-5" formControlName="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Others">Others</option>
+        </select>
+      </div>
+      <small class="text-muted" [hidden]="signup.controls.gender.valid || (signup.controls.gender.pristine)">
+          gender is required (minimum 10 characters).
+      </small>
+    </div>
+    <div class="form-row">
+        <div class="name">
+      <label class="control-label">city</label>
+        </div>
+      <div class="value">
+        <select  class="input--style-5" formControlName="city">
+          <option value="Moonak">Moonak</option>
+        </select>
+      </div>
+      <small class="text-muted" [hidden]="signup.controls.city.valid || (signup.controls.city.pristine)">
+          city is required (minimum 10 characters).
+      </small>
+    </div>
+
+    <div class="form-row">
+        <div class="name">
+      <label class="control-label">contact</label>
+        </div>
+      <div class="value">
+      <input type="text" class="input--style-5" formControlName="contactNumber">
+      </div>
+      <small [hidden]="signup.controls.contactNumber.valid || (signup.controls.contactNumber.pristine)">
+          contactNumber is required (minimum 10 characters).
+      </small>
+    </div>
+    <div class="form-row">
+        <div class="name">
+      <label class="control-label">lastDonated</label>
+        </div>
+      <div class="value">
+        <input type="date" class="daterangepicker" formControlName="lastDonated">
+      </div>
+      <small class="text-muted" [hidden]="signup.controls.lastDonated.valid || (signup.controls.lastDonated.pristine)">
+          DOB is required (minimum 10 characters).
+      </small>
+    </div>
+    <button type="submit" class="btn btn--radius-2 btn--red">Submit</button>
+  </form>
+</div>
+</div>
+</div>
+</div>
+<button (click)="check()" class="btn btn--radius-2 btn--red">check</button>
